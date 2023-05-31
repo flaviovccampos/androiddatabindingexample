@@ -27,6 +27,9 @@ class MainActivity : AppCompatActivity() {
             binding.textWelcome.text = it
         }
 
+        viewModel.student().observe(this){
+            binding.student = it
+        }
     }
 
 }
