@@ -6,11 +6,7 @@ import android.view.View
 import android.view.View.OnClickListener
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
-import androidx.lifecycle.ViewModelProvider
-import com.example.databindingexample.viewmodel.DataBindingViewModel
-import com.example.databindingexample.viewmodel.DataBindingViewModelFactory
 import com.example.databindingexample.R
-import com.example.databindingexample.model.Student
 import com.example.databindingexample.databinding.ActivityMainBinding
 
 

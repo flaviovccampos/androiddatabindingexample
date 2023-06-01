@@ -1,8 +1,9 @@
-package com.example.databindingexample.viewmodel
+package com.example.databindingexample.viewmodel.factory
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.example.databindingexample.model.Student
+import com.example.databindingexample.viewmodel.DataBindingViewModel
 
 class DataBindingViewModelFactory(private val student: Student): ViewModelProvider.Factory {
 

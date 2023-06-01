@@ -17,7 +17,10 @@ class DataViewModelBindingActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         binding = DataBindingUtil.setContentView(this, R.layout.activity_data_view_model_binding)
-        viewModel = ViewModelProvider(this).get(DataViewModelBindingViewModel::class.java)
+        viewModel = ViewModelProvider(this)[DataViewModelBindingViewModel::class.java]
+
+        binding.lifecycleOwner = this
+        binding.actViewModel = viewModel
 
         initializeObservers()
 

@@ -8,7 +8,7 @@ import com.example.databindingexample.R
 import com.example.databindingexample.databinding.ActivityDataBindingBinding
 import com.example.databindingexample.model.Student
 import com.example.databindingexample.viewmodel.DataBindingViewModel
-import com.example.databindingexample.viewmodel.DataBindingViewModelFactory
+import com.example.databindingexample.viewmodel.factory.DataBindingViewModelFactory
 
 class DataBindingActivity : AppCompatActivity() {
 
