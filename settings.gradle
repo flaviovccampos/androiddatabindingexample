@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "TestAppCompat"
+rootProject.name = "DataBindingExample"
 include ':app'

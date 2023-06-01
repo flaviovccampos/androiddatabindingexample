@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme.TestAppCompat" parent="Theme.AppCompat.DayNight" />
+    <style name="Theme.DataBindingExampleNoActionBar" parent="Theme.AppCompat.DayNight.NoActionBar" />
+    <style name="Theme.DataBindingExample" parent="Theme.AppCompat.DayNight" />
+
 </resources>

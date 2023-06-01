@@ -10,13 +10,19 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.TestAppCompat"
+        android:theme="@style/Theme.DataBindingExample"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".view.DataViewModelBindingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.DataBindingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.TestAppCompat">
+            android:theme="@style/Theme.DataBindingExampleNoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

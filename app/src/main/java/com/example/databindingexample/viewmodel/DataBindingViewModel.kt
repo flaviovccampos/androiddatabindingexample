@@ -1,11 +1,11 @@
-package com.example.databindingexample
+package com.example.databindingexample.viewmodel
 
-import android.util.MutableDouble
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.example.databindingexample.model.Student
 
-class MainViewModel(studentInit: Student): ViewModel() {
+class DataBindingViewModel(studentInit: Student): ViewModel() {
 
     private var helloText = MutableLiveData<String>()
     private var student = MutableLiveData<Student>()

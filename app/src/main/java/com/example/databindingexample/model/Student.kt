@@ -1,4 +1,4 @@
-package com.example.databindingexample
+package com.example.databindingexample.model
 
 data class Student(
     var id: Int,
