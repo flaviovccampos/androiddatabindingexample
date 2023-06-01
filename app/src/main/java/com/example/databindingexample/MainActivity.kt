@@ -11,12 +11,15 @@ class MainActivity : AppCompatActivity() {
 
     lateinit var binding: ActivityMainBinding
     lateinit var viewModel: MainViewModel
+    lateinit var viewModelFactory: MainViewModelFactory
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
-        viewModel = ViewModelProvider(this)[MainViewModel::class.java]
+
+        viewModelFactory = MainViewModelFactory(Student(id= 1, name= "Jhon", email= "jhon@email.com"))
+        viewModel = ViewModelProvider(this, viewModelFactory)[MainViewModel::class.java]
 
         initializeObservers()
     }

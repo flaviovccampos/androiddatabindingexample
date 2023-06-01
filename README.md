@@ -4,3 +4,4 @@
 ## DataBinding
 ## Object Binding
 ## Events Binding
+## ViewModel Factory Pattern

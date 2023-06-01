@@ -5,14 +5,14 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class MainViewModel: ViewModel() {
+class MainViewModel(studentInit: Student): ViewModel() {
 
     private var helloText = MutableLiveData<String>()
     private var student = MutableLiveData<Student>()
 
     init{
         helloText.value = "DataBinding Example"
-        student.value = Student(1, "Jhon", "jhon@email.com")
+        student.value = studentInit
     }
 
     fun helloText(): LiveData<String>{
